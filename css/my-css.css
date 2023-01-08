@@ -29,8 +29,7 @@ p{
     font-weight: 200;
     /* sets the font size for p elements */
     font-size: 1.5em;
-    /* aligns the text for p elements to the left */
-    text-align: left;
+
 }
 
 /* Responsive font size makes the words easier to read on a smaller screen */
@@ -100,12 +99,14 @@ a:hover{
 }
 
 nav{
+    width: 80%;
+    padding-left: 10%;
     /* sets the display property for nav elements to "flex" */
     display: flex;
     /* aligns nav elements to the right and evenly distributes them within the flex container */
     justify-content: flex-end;
     /* aligns nav elements to the right and evenly distributes them within the flex container */
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 nav a{
@@ -312,7 +313,7 @@ footer a{
 
 @media  screen and (max-width: 800px) {
     .listing{
-        width: 90%;
+        max-width: 90%;
     }
 }
 
@@ -394,6 +395,7 @@ footer a{
 iframe{
     border: 0;
     overflow: hidden;
+    max-width: 100%;
 }
 
 /* removes margins for elements with tag "body" within elements with class "addbooking" */
@@ -407,6 +409,6 @@ iframe{
 /* Responsive layout - makes the iframes full width on a smaller screen */
   @media screen and (max-width:800px) {
     .iframe {
-        width: 90%;
+        width: 100%;
     }
 }
