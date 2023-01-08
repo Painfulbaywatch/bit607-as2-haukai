@@ -177,8 +177,10 @@ footer a{
     width: 75%;
     /* allows elements with class "aboutuswords" to have padding and borders without affecting the element's total width */
     box-sizing: border-box;
+    min-width: 450px;
 }
 .aboutusimg{
+    min-width: 450px;
     /* sets the display property for elements with class "aboutusimg" to "flex" */
     display: flex;
     /* centers the flex items within elements with class "aboutusimg" */
@@ -195,7 +197,7 @@ footer a{
   @media screen and (max-width:800px) {
     .aboutusimg {
         /* sets the width of elements with class "aboutusimg" to 100% when the screen width is 600px or less */
-        width: 100%;
+        width: 90%;
     }
     .aboutuswords{
         /* sets the width of elements with class "aboutuswords" to 100% when the screen width is 600px or less */
@@ -238,7 +240,7 @@ footer a{
   @media screen and (max-width:800px) {
     .button {
         /* sets the width of elements with class "button" to 100% when the screen width is 600px or less */
-        width: 100%;
+        width: 90%;
         padding: 0;
     }
 }
@@ -356,8 +358,6 @@ footer a{
     flex-direction: column;
     /* aligns the flex items within elements with class "container" to the center */
     justify-content: center;
-    /* aligns the flex items within elements with class "container" to the top */
-    justify-content: flex-start;
     /* sets the width of elements with class "container" to 50% */
     width: 50%;
     /* sets the minimum width of elements with class "container" to 800px */
@@ -370,11 +370,15 @@ footer a{
   instead of next to each other */
   @media screen and (max-width:800px) {
     .container {
-        width: 100%;
-        padding: 0;
+        max-width: 90%;
+        padding: 5%;
     }
     .menuimg{
-        width: 100%;
+        max-width: 100%;
+    }
+    .container .headline{
+        width: 90%;
+        padding-left: 5%;
     }
 }
 
