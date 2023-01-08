@@ -34,7 +34,7 @@ p{
 }
 
 /* Responsive font size makes the words easier to read on a smaller screen */
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     h1 {
       font-size:1.5em;
     }
@@ -93,7 +93,7 @@ a:hover{
 }
 
 /* Responsive img size makes the logo easier to see on a smaller screen */
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .logo img{
         width: 100%
     }
@@ -113,8 +113,8 @@ nav a{
     font-size: 2em;
 }
 
-/* Responsive img size makes the logo easier to see on a smaller screen */
-@media screen and (max-width:600px) {
+/* Responsive img size makes the words easier to read on a smaller screen */
+@media screen and (max-width:800px) {
     nav a {
       font-size:1em;
     }
@@ -136,6 +136,12 @@ footer a{
     font-size: 2em;
 }
 
+/* Responsive font size makes the words easier to read on a smaller screen */
+@media screen and (max-width:800px) {
+    footer a {
+      font-size:1em;
+    }
+}
 
 .notabutton{
     /* sets the display property for elements with class "notabutton" to "flex" */
@@ -186,14 +192,14 @@ footer a{
 
 /* Responsive layout - makes the aboutusimg and aboutuswords stack on top of each other
   instead of next to each other */
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:800px) {
     .aboutusimg {
         /* sets the width of elements with class "aboutusimg" to 100% when the screen width is 600px or less */
         width: 100%;
     }
     .aboutuswords{
         /* sets the width of elements with class "aboutuswords" to 100% when the screen width is 600px or less */
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -228,10 +234,11 @@ footer a{
 
 /* Responsive layout - makes the buttons stack on top of each other
   instead of next to each other */
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:800px) {
     .button {
         /* sets the width of elements with class "button" to 100% when the screen width is 600px or less */
         width: 100%;
+        padding: 0;
     }
 }
 
@@ -262,6 +269,12 @@ footer a{
     font-size: 2em;
 }
 
+/* Responsive font size makes the words easier to read on a smaller screen */
+@media screen and (max-width:800px) {
+    .buttonimg {
+      font-size:1em;
+    }
+}
 
 .generalinfo{
     /* sets the width of elements with class "generalinfo" to 100% */
@@ -348,7 +361,7 @@ footer a{
 
 /* Responsive layout - makes the two containers stack on top of each other
   instead of next to each other */
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:800px) {
     .container {
         width: 100%;
     }
@@ -382,8 +395,8 @@ iframe{
 }
 
 /* Responsive layout - makes the iframes full width on a smaller screen */
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:800px) {
     .iframe {
-        width: 100%;
+        width: 90%;
     }
 }
