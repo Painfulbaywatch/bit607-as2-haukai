@@ -36,13 +36,13 @@ p{
 /* Responsive font size makes the words easier to read on a smaller screen */
 @media screen and (max-width:600px) {
     h1 {
-      font-size:3.6em;
+      font-size:1.5em;
     }
     h2 {
-        font-size:2.4em;
+        font-size:1em;
       }
       p {
-        font-size:1.8em;
+        font-size:0.9em;
       }
 }
 
@@ -113,6 +113,7 @@ nav a{
     font-size: 2em;
 }
 
+/* Responsive img size makes the logo easier to see on a smaller screen */
 @media screen and (max-width:600px) {
     nav a {
       font-size:1em;
