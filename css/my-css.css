@@ -124,8 +124,6 @@ footer{
     /* sets the display property for footer elements to "flex" */
     display: flex;
     /* aligns footer elements to the right and evenly distributes them within the flex container */
-    justify-content: flex-end;
-    /* aligns footer elements to the right and evenly distributes them within the flex container */
     justify-content: space-between;
     /* adds padding to the top of footer elements */
     padding-top: 1em;
