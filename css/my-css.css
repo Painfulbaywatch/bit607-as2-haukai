@@ -185,7 +185,8 @@ footer a{
     /* positions the object within elements with class "aboutusimg" to the center */
     object-position: center;
     /* sets the maximum width of elements with class "aboutusimg" to 50% */
-    max-width: 50%
+    max-width: 50%;
+    box-sizing: border-box;
 }
 
 /* Responsive layout - makes the aboutusimg and aboutuswords stack on top of each other
@@ -210,6 +211,7 @@ footer a{
     flex-wrap: wrap;
     /* centers the flex items within elements with class "buttons" */
     justify-content: center;
+    box-sizing: border-box;
 }
 .button{
     /* sets the width of elements with class "button" to 25% */
@@ -305,7 +307,13 @@ footer a{
     /* sets the direction of the flex items within elements with class "listing" to column */
     flex-direction: column;
     /* aligns the flex items within elements with class "listing" to the middle */
-    justify-content: middle;
+    justify-content: center;
+}
+
+@media  screen and (max-width: 800px) {
+    .listing{
+        width: 90%;
+    }
 }
 
 .headline{
@@ -361,6 +369,10 @@ footer a{
   instead of next to each other */
   @media screen and (max-width:800px) {
     .container {
+        width: 100%;
+        padding: 0;
+    }
+    .menuimg{
         width: 100%;
     }
 }
