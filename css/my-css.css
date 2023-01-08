@@ -113,6 +113,12 @@ nav a{
     font-size: 2em;
 }
 
+@media screen and (max-width:600px) {
+    nav a {
+      font-size:1em;
+    }
+}
+
 footer{
     /* sets the display property for footer elements to "flex" */
     display: flex;
