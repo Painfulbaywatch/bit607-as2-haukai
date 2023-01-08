@@ -198,6 +198,7 @@ footer a{
     .aboutusimg {
         /* sets the width of elements with class "aboutusimg" to 100% when the screen width is 600px or less */
         width: 90%;
+        min-width: 100px;
     }
     .aboutuswords{
         /* sets the width of elements with class "aboutuswords" to 100% when the screen width is 600px or less */
@@ -241,6 +242,7 @@ footer a{
     .button {
         /* sets the width of elements with class "button" to 100% when the screen width is 600px or less */
         width: 90%;
+        min-width: 100px;
         padding: 0;
     }
 }
@@ -362,7 +364,7 @@ footer a{
     width: 50%;
     /* sets the minimum width of elements with class "container" to 800px */
     min-width: 800px;
-    /* adds padding to elements with class "*/
+    /* adds padding to elements with class "container"*/
     padding: 2px;
 }
 
