@@ -289,45 +289,26 @@ color: #ede0d4;}
     }
 }
 
-.headline{
-    display: flex;
-    justify-content: center;
-    height: 3em;
-}
-
-.cost{
-    padding-left: 2%;
-}
-
-.desc{
-    text-align: center;
-}
-
-.containers{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .container{
 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center flex-start;
-    width: 50%;
-    min-width: 800px;
-    padding: 2px;
+    justify-content: center;
 }
 
 
-.container .headline{
-    width: 80%;
-    padding-left: 10%;
+.headline{
+    width: 70%;
+    padding-left: 15%;
     display: flex;
     justify-content: space-between;
     height: 3em;
+}
+
+.desc{
+    width: 70%;
+    padding-left: 15%;
 }
 
 /* removes the border and overflow of elements with tag "iframe" */
