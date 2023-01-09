@@ -1,33 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;}
 h1{
-    /* sets the text color for h1 elements */
     color: rgb(87, 66, 53);
-    /* sets the font family for h1 elements */
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    /* sets the font size for h1 elements */
     font-size: 3em;
 }
 
 h2{ 
-    /* sets the text color for h2 elements */
     color: rgb(35, 73, 131);
-    /* sets the font family for h2 elements */
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-    /* sets the font weight for h2 elements */
     font-weight: 200; 
-    /* aligns the text for h2 elements to the left */
     text-align: left;
-    /* sets the font size for h2 elements */
     font-size: 2em;
 }
 
 p{
-    /* sets the text color for p elements */
     color: rgb(87, 66, 53);
-    /* sets the font family for p elements */
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    /* sets the font weight for p elements */
     font-weight: 200;
-    /* sets the font size for p elements */
     font-size: 1.5em;
 
 }
@@ -46,44 +39,25 @@ p{
 }
 
 .cost{
-    /* sets the text color for elements with class "cost" */
     color: rgb(158, 17, 35);
-    /* sets the font family for elements with class "cost" */
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    /* sets the font weight for elements with class "cost" */
     font-weight: 200;
-    /* aligns the text for elements with class "cost" to the right */
     text-align: right;
 }
 
 a{
-    /* sets the text color for a elements */
     color: rgb(80, 52, 35);
-    /* sets the font family for a elements */
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    /* sets the font weight for a elements */
     font-weight: 200;
-    /* removes the underline decoration for a elements */
     text-decoration: none;
 }
 
 
-
-a:active{
-    /* sets the text color for active a elements */
-    color: rgb(158, 17, 35);
-}
-
-a:visited{
-    /* sets the text color for visited a elements */
-    color: rgb(80, 52, 35);
-}
-
 a:hover{
-    /* sets the background color for hovered a elements */
-    background-color:rgb(211, 215, 223);
     /* sets the font weight for hovered a elements to bold */
     font-weight:bolder;
+    text-decoration: none;
+    color: rgb(80, 52, 35);
 }
 
 .logo img{
@@ -98,41 +72,87 @@ a:hover{
     }
 }
 
-nav{
-    width: 80%;
-    padding-left: 10%;
-    /* sets the display property for nav elements to "flex" */
-    display: flex;
-    /* aligns nav elements to the right and evenly distributes them within the flex container */
-    justify-content: flex-end;
-    /* aligns nav elements to the right and evenly distributes them within the flex container */
-    justify-content: space-evenly;
+/* Nav formatting starts here */
+.topnav{  /* Format and style fixed banner container*/
+  overflow: hidden;
+  background-color: rgb(35, 73, 131);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
 }
 
-nav a{
-    /* sets the font size for a elements within nav elements */
-    font-size: 2em;
+ .topnav a{ /* Style the links inside the banner - navigation bar */
+  color: #EDE0D4;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
 }
 
-/* Responsive img size makes the words easier to read on a smaller screen */
-@media screen and (max-width:800px) {
-    nav a {
-      font-size:1em;
+ .topnav a:hover{ /* Change the colour of links when hovering over them in nav bar */
+ background-color: #849ca8;
+}
+
+ .topnav a.active{ /* Add colour to the active/current link */
+  font-weight: bolder;
+  font-size: larger;
+  padding: 20px; 
+} 
+   
+ .topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
     }
+}  
+/* Responsive img size makes the words easier to read on a smaller screen */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/* Footer section  */ 
+footer {
+overflow: hidden;
+padding: 10px;
+background-color: rgb(35, 73, 131);
+right: 0; 
+left:0; 
+width: 100%;
+position: absolute;
+margin-top: 5px;} 
+
+footer a {/* links inside footer */
+padding: 10px;
+text-decoration: none; 
+color: #ede0d4;}
+
+.bottomrow{
+    width: 100%;
+    text-decoration: none; 
+    color: #ede0d4;
+    float:left;
+    font-size: 12px;
+    padding-left: 5px;
 }
 
-footer{
-    /* sets the display property for footer elements to "flex" */
-    display: flex;
-    /* aligns footer elements to the right and evenly distributes them within the flex container */
-    justify-content: space-between;
-    /* adds padding to the top of footer elements */
-    padding-top: 1em;
-}
-
-footer a{
-    /* sets the font size for a elements within footer elements */
-    font-size: 2em;
+.smedia{
+ width: 25%;
+ padding-left: 75%;
 }
 
 /* Responsive font size makes the words easier to read on a smaller screen */
@@ -143,51 +163,34 @@ footer a{
 }
 
 .notabutton{
-    /* sets the display property for elements with class "notabutton" to "flex" */
     display: flex;
-    /* allows elements with class "notabutton" to wrap onto multiple lines if necessary */
     flex-wrap: wrap;
-    /* sets the direction of the flex items within elements with class "notabutton" to column */
     flex-direction: column;
-    /* centers the flex items within elements with class "notabutton" */
     justify-content: center;
 }
 
 .notabuttonlabel{
-    /* sets the display property for elements with class "notabuttonlabel" to "flex" */
     display:flex;
-    /* evenly distributes the flex items within elements with class "notabuttonlabel" */
     justify-content: space-around;
 }
 
 .notabuttoncontent{
-    /* sets the display property for elements with class "notabuttoncontent" to "flex" */
     display: flex;
-    /* sets the direction of the flex items within elements with class "notabuttoncontent" to row */
     flex-direction: row;
-    /* allows elements with class "notabuttoncontent" to wrap onto multiple lines if necessary */
     flex-wrap: wrap;
-    /* evenly distributes the flex items within elements with class "notabuttoncontent" */
     justify-content: space-evenly;
 }
 .aboutuswords{
-    /* centers the text within elements with class "aboutuswords" */
     text-align: center;
-    /* sets the width of elements with class "aboutuswords" to 75% */
     width: 75%;
-    /* allows elements with class "aboutuswords" to have padding and borders without affecting the element's total width */
     box-sizing: border-box;
     min-width: 450px;
 }
 .aboutusimg{
     min-width: 450px;
-    /* sets the display property for elements with class "aboutusimg" to "flex" */
     display: flex;
-    /* centers the flex items within elements with class "aboutusimg" */
     justify-content: center;
-    /* positions the object within elements with class "aboutusimg" to the center */
     object-position: center;
-    /* sets the maximum width of elements with class "aboutusimg" to 50% */
     max-width: 50%;
     box-sizing: border-box;
 }
@@ -196,43 +199,29 @@ footer a{
   instead of next to each other */
   @media screen and (max-width:800px) {
     .aboutusimg {
-        /* sets the width of elements with class "aboutusimg" to 100% when the screen width is 600px or less */
         width: 90%;
         min-width: 100px;
     }
     .aboutuswords{
-        /* sets the width of elements with class "aboutuswords" to 100% when the screen width is 600px or less */
         width: 90%;
     }
 }
 
 .buttons{
-    /* sets the width of elements with class "buttons" to 100% */
     width: 100%;
-    /* sets the display property for elements with class "buttons" to "flex" */
     display: flex;
-    /* allows elements with class "buttons" to wrap onto multiple lines if necessary */
     flex-wrap: wrap;
-    /* centers the flex items within elements with class "buttons" */
     justify-content: center;
     box-sizing: border-box;
 }
 .button{
-    /* sets the width of elements with class "button" to 25% */
     width: 25%;
-    /* sets the minimum width of elements with class "button" to 450px */
     min-width: 450px;
-    /* sets the maximum width of elements with class "button" to 30% */
     max-width: 30%;
-    /* allows elements with class "button" to have padding and borders without affecting the element's total width */
     box-sizing: border-box;
-    /* sets the display property for elements with class "button" to "flex" */
     display: flex;
-    /* allows elements with class "button" to wrap onto multiple lines if necessary */
     flex-wrap: wrap;
-    /* sets the direction of the flex items within elements with class "button" to column */
     flex-direction: column;
-    /* adds padding to elements with class "button" */
     padding: 2px;
 }
 
@@ -248,33 +237,23 @@ footer a{
 }
 
 .label{
-    /* sets the display property for elements with class "label" to "flex" */
     display:flex;
-    /* evenly distributes the flex items within elements with class "label" */
     justify-content: space-around;   
 }
 
 .buttonimgs{
-    /* sets the display property for elements with class "buttonimgs" to "flex" */
     display: flex;
-    /* sets the direction of the flex items within elements with class "buttonimgs" to row */
     flex-direction: row;
-    /* allows elements with class "buttonimgs" to wrap onto multiple lines if necessary */
     flex-wrap: wrap;
-    /* evenly distributes the flex items within elements with class "buttonimgs" */
     justify-content: space-around;
 }
 
 .buttonimg{
-    /* allows elements with class "buttonimg" to have padding and borders without affecting the element's total width */
     box-sizing: border-box;
-    /* positions the object within elements with class "buttonimg" to the center */
     object-position: center;
-    /* sets the font size for elements with class "buttonimg" to 2em */
     font-size: 2em;
 }
 
-/* Responsive font size makes the words easier to read on a smaller screen */
 @media screen and (max-width:800px) {
     .buttonimg {
       font-size:1em;
@@ -282,36 +261,25 @@ footer a{
 }
 
 .generalinfo{
-    /* sets the width of elements with class "generalinfo" to 100% */
     width: 100%;
-    /* sets the display property for elements with class "generalinfo" to "flex" */
     display: flex;
-    /* sets the direction of the flex items within elements with class "generalinfo" to column */
     flex-direction: column;
-    /* aligns the flex items within elements with class "generalinfo" to the center */
     align-items: center;
 }
 
 .menuimg{
-    /* sets the display property for elements with class "menuimg" to "flex" */
     display: flex;
-    /* centers the flex items within elements with class "menuimg" */
     justify-content: center;
-    /* adds padding to the top of elements with class "menuimg" */
     padding-top: 1em;
 }
 
 .section{
-    /* centers the text within elements with class "section" */
     text-align: center;
 }
 
 .listing{
-    /* sets the display property for elements with class "listing" to "flex" */
     display: flex;
-    /* sets the direction of the flex items within elements with class "listing" to column */
     flex-direction: column;
-    /* aligns the flex items within elements with class "listing" to the middle */
     justify-content: center;
 }
 
@@ -322,78 +290,43 @@ footer a{
 }
 
 .headline{
-    /* sets the display property for elements with class "headline" to "flex" */
     display: flex;
-    /* centers the flex items within elements with class "headline" */
     justify-content: center;
-    /* sets the height of elements with class "headline" to 3em */
     height: 3em;
 }
 
 .cost{
-    /* adds padding to the left of elements with class "cost" */
     padding-left: 2%;
 }
 
 .desc{
-    /* centers the text within elements with class "desc" */
     text-align: center;
 }
 
 .containers{
-    /* sets the width of elements with class "containers" to 100% */
     width: 100%;
-    /* sets the display property for elements with class "containers" to "flex" */
     display: flex;
-    /* allows elements with class "containers" to wrap onto multiple lines if necessary */
     flex-wrap: wrap;
-    /* centers the flex items within elements with class "containers" */
     justify-content: center;
 }
 
 .container{
-    /* allows elements with class "container" to have padding and borders without affecting the element's total width */
+
     box-sizing: border-box;
-    /* sets the display property for elements with class "container" to "flex" */
     display: flex;
-    /* sets the direction of the flex items within elements with class "container" to column */
     flex-direction: column;
-    /* aligns the flex items within elements with class "container" to the center */
-    justify-content: center;
-    /* sets the width of elements with class "container" to 50% */
+    justify-content: center flex-start;
     width: 50%;
-    /* sets the minimum width of elements with class "container" to 800px */
     min-width: 800px;
-    /* adds padding to elements with class "container"*/
     padding: 2px;
 }
 
-/* Responsive layout - makes the two containers stack on top of each other
-  instead of next to each other */
-  @media screen and (max-width:800px) {
-    .container {
-        max-width: 90%;
-        padding: 5%;
-    }
-    .menuimg{
-        max-width: 100%;
-    }
-    .container .headline{
-        width: 90%;
-        padding-left: 5%;
-    }
-}
 
 .container .headline{
-    /* sets the width of elements with class "headline" within elements with class "container" to 60% */
-    width: 60%;
-    /* adds padding to the left of elements with class "headline" within elements with class "container" */
-    padding-left: 20%;
-    /* sets the display property for elements with class "headline" within elements with class "container" to "flex" */
+    width: 80%;
+    padding-left: 10%;
     display: flex;
-    /* evenly distributes the flex items within elements with class "headline" within elements with class "container" */
     justify-content: space-between;
-    /* sets the height of elements with class "headline" within elements with class "container" to 3em */
     height: 3em;
 }
 
@@ -416,5 +349,21 @@ iframe{
   @media screen and (max-width:800px) {
     .iframe {
         width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two containers stack on top of each other
+  instead of next to each other */
+  @media screen and (max-width:800px) {
+    .container {
+        max-width: 90%;
+        padding: 5%;
+    }
+    .menuimg{
+        max-width: 100%;
+    }
+    .container .headline{
+        width: 90%;
+        padding-left: 5%;
     }
 }
