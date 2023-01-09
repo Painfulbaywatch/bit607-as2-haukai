@@ -195,18 +195,6 @@ color: #ede0d4;}
     box-sizing: border-box;
 }
 
-/* Responsive layout - makes the aboutusimg and aboutuswords stack on top of each other
-  instead of next to each other */
-  @media screen and (max-width:800px) {
-    .aboutusimg {
-        width: 90%;
-        min-width: 100px;
-    }
-    .aboutuswords{
-        width: 90%;
-    }
-}
-
 .buttons{
     width: 100%;
     display: flex;
@@ -223,17 +211,6 @@ color: #ede0d4;}
     flex-wrap: wrap;
     flex-direction: column;
     padding: 2px;
-}
-
-/* Responsive layout - makes the buttons stack on top of each other
-  instead of next to each other */
-  @media screen and (max-width:800px) {
-    .button {
-        /* sets the width of elements with class "button" to 100% when the screen width is 600px or less */
-        width: 90%;
-        min-width: 100px;
-        padding: 0;
-    }
 }
 
 .label{
@@ -260,27 +237,32 @@ color: #ede0d4;}
     }
 }
 
+
 .generalinfo{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .menuimg{
     display: flex;
     justify-content: center;
-    padding-top: 1em;
+    align-items: center;
+    padding: 1em;
 }
 
 .section{
-    text-align: center;
+    align-items: center;
 }
 
 .listing{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .container{
@@ -289,20 +271,25 @@ color: #ede0d4;}
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
 .headline{
-    width: 70%;
-    padding-left: 15%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 80%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 3em;
 }
 
 .desc{
-    width: 70%;
-    padding-left: 15%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
 }
 
 /* removes the border and overflow of elements with tag "iframe" */
