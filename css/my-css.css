@@ -283,12 +283,6 @@ color: #ede0d4;}
     justify-content: center;
 }
 
-@media  screen and (max-width: 800px) {
-    .listing{
-        max-width: 90%;
-    }
-}
-
 .container{
 
     box-sizing: border-box;
