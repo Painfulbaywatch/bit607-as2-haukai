@@ -65,13 +65,6 @@ a:hover{
     max-width: 10%;
 }
 
-/* Responsive img size makes the logo easier to see on a smaller screen */
-@media screen and (max-width:800px) {
-    .logo img{
-        width: 100%
-    }
-}
-
 /* Nav formatting starts here */
 .topnav{  /* Format and style fixed banner container*/
   overflow: hidden;
@@ -162,74 +155,12 @@ color: #ede0d4;}
     }
 }
 
-.notabutton{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.notabuttonlabel{
-    display:flex;
-    justify-content: space-around;
-}
-
-.notabuttoncontent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.aboutuswords{
-    text-align: center;
-    width: 75%;
-    box-sizing: border-box;
-    min-width: 450px;
-}
-.aboutusimg{
-    min-width: 450px;
-    display: flex;
-    justify-content: center;
-    object-position: center;
-    max-width: 50%;
-    box-sizing: border-box;
-}
-
-.buttons{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-sizing: border-box;
-}
-.button{
-    width: 25%;
-    min-width: 450px;
-    max-width: 30%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 2px;
-}
 
 .label{
     display:flex;
     justify-content: space-around;   
 }
 
-.buttonimgs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.buttonimg{
-    box-sizing: border-box;
-    object-position: center;
-    font-size: 2em;
-}
 
 @media screen and (max-width:800px) {
     .buttonimg {
@@ -277,7 +208,6 @@ color: #ede0d4;}
 
 
 .headline{
-    border: 1px solid black;
     box-sizing: border-box;
     width: 80%;
     display: flex;
