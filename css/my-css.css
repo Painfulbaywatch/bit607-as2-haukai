@@ -83,8 +83,10 @@ a:hover{
 }
 
  .topnav a:hover{ /* Change the colour of links when hovering over them in nav bar */
- background-color: #849ca8;
-}
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(80, 52, 35);
+ }
 
  .topnav a.active{ /* Add colour to the active/current link */
   font-weight: bolder;
@@ -96,7 +98,7 @@ a:hover{
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -104,7 +106,7 @@ a:hover{
     }
 }  
 /* Responsive img size makes the words easier to read on a smaller screen */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -120,19 +122,32 @@ a:hover{
 
 /* Footer section  */ 
 footer {
-overflow: hidden;
-padding: 10px;
-background-color: rgb(35, 73, 131);
-right: 0; 
-left:0; 
-width: 100%;
-position: absolute;
-margin-top: 5px;} 
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgb(35, 73, 131);
+    right: 0; 
+    left:0; 
+    width: 100%;
+    position: absolute;
+    margin-top: 5px;
+} 
 
-footer a {/* links inside footer */
-padding: 10px;
-text-decoration: none; 
-color: #ede0d4;}
+
+
+footer a{ /* Style the links inside the footer */
+    color: #EDE0D4;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+  }
+  
+footer a:hover{ /* Change the colour of links when hovering over them in footer */
+    font-weight:900px;
+    font-size: largest;
+    text-decoration: none;
+ }
+
 
 .bottomrow{
     width: 100%;
@@ -158,16 +173,9 @@ color: #ede0d4;}
 
 .label{
     display:flex;
-    justify-content: space-around;   
+    justify-content: space-around;
+    padding-top: 1em;   
 }
-
-
-@media screen and (max-width:800px) {
-    .buttonimg {
-      font-size:1em;
-    }
-}
-
 
 .generalinfo{
     width: 100%;
@@ -183,6 +191,12 @@ color: #ede0d4;}
     align-items: center;
     padding: 1em;
     width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    .menuimg{
+        width: 95%;
+    }
 }
 
 .section{
@@ -227,7 +241,8 @@ color: #ede0d4;}
 iframe{
     border: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 95%;
+    padding: 2.5%;
 }
 
 /* removes margins for elements with tag "body" within elements with class "addbooking" */
