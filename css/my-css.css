@@ -192,13 +192,11 @@ footer a:hover{ /* Change the colour of links when hovering over them in footer 
     align-items: center;
     padding: 1em;
     width: 90%;
-    aspect-ratio: 1 / 1;
 }
 
 @media screen and (max-width: 800px) {
     .menuimg{
         width: 95%;
-        aspect-ratio: 1 / 1;
     }
 }
 
