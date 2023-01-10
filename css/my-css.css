@@ -63,6 +63,7 @@ a:hover{
 .logo img{
     /* sets the maximum width for images within elements with class "logo" */
     max-width: 10%;
+    aspect-ratio: 1 / 1;
 }
 
 /* Nav formatting starts here */
