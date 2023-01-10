@@ -144,9 +144,9 @@ footer a{ /* Style the links inside the footer */
   }
   
 footer a:hover{ /* Change the colour of links when hovering over them in footer */
-    font-weight:900px;
-    font-size: largest;
+    font-weight: 900;
     text-decoration: none;
+    color: rgb(80, 52, 35);
  }
 
 
