@@ -1,0 +1,6 @@
+<files "rosters.html">
+AuthName "Secure directory"
+AuthUserFile ../../htpasswd/bit607-as2-haukai/.htpasswd
+AuthType Basic
+Require valid-user
+</files>
