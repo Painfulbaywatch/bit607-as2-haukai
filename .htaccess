@@ -1,0 +1,10 @@
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile /UniServerZ/htpasswd/bit607-as2-haukai/.htpasswd
+Require valid-user
+
+<Files "rosters.html">
+    Satisfy Any
+    Allow from all
+    Require valid-user
+</Files>
