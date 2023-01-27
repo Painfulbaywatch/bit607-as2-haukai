@@ -1,3 +1,4 @@
+
 <files "rosters.html">
 AuthName "Secure directory"
 AuthUserFile ../../htpasswd/bit607-as2-haukai/.htpasswd
